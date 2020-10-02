@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <!-- CSS only -->
+        <link 
+            rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+            crossorigin="anonymous"
+        />       
+    </head>
+    <body>                       
+        <form>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4"><img src="logo.png" style="width: 40%;"/></div>
+                    <div class="col-md-8"><h2>Application for Transfer of Registration</h2></div>
+                </div>    
+                <div class="row">
+                    <div class="col-md-10" style="border: 2px solid black;">
+                        An application can be completed online at 
+                        service.nsw.gov.au/transaction/transfer-vehicle-registration 
+                        or in person (not mail) at a service centre within 14 days
+                        of purchasing/acquiring a vehicle or a late application fee 
+                        of at least $121 will be charged. Costs shown are correct 
+                        at the time of printing, but can be subject to change without notice.
+                        Check the last page of this form for a guide to applying to transfer registration.
+                        Note:
+                        To register a vehicle in your name you must be at least 
+                        16 years of age for a light vehicle (up to 4.5 tonnes GVM) 
+                        and at least 18 years of age for a heavy vehicle (over 4.5 tonnes GVM). 
+                        To complete an application online you must have an online services account 
+                        and the notice of disposal must be lodged by the seller and recorded by Service NSW.
+                    </div>
+                    <div class="col-md-2" style="border: 2px solid black;"> Office use Only Attachment</div>
+                </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>1. Registration Plate Number</h5>
+                    <input type="text" placeholder="e.g. CPP 33C"/>
+                    <h5>2. Is the vehicle to be registered in the name of:</h5>
+                    <ul style="list-style: none;">
+                        <li><input type="checkbox" value ="a person" id="checkbox_a person">
+                            <label for="checkbox_a person">a person</label><b>&#8594; now go to 3</b>
+                        </li>
+                        <li><input type="checkbox" value ="a licensed motor dealer" 
+                            id="checkbox_a licensed motor dealer">
+                            <label for="checkbox_a licensed motor dealer">a licensed motor dealer</label>
+                            <b>&#8594; now go to 4</b>
+                        </li>
+                        <li><input type="checkbox" value ="a corporation" id="checkbox_a corporation">
+                            <label for="checkbox_a corporation">a corporation</label>
+                            <b>&#8594; now go to 5</b>
+                        </li>
+                    </ul>    
+                    <h5>Have you previously conducted business with the Roads and Maritime in another name?
+                        If 'Yes" please specify
+                    </h5>
+                    <input type="text" placeholder="Other Name"/>
+                    <p><h5>3. Customer Details</h5></p>
+                    <p>If you are sending someone else to transfer the registration into your name 
+                        you must also complete the Representative Authority on page 3 of this form. 
+                        However, if you are not already recorded on Roads and Maritime's computer system, 
+                        you must attend a service centre in person and provide Proof of Identity.
+                    </p>
+                    
+                    <p><h5>NSW Driver licence/Customer number</h5></p>
+                    <input type="text" placeholder="e.g. 1234567"/>
+                    
+                    <p><h5>Surname</h5></p>
+                    <input type="text" placeholder="e.g. Smith"/>
+                    
+                    <p><h5>Given name</h5></p>
+                    <input type="text" placeholder="e.g. John"/>
+                    
+                    <p><i>You must notify Service NSW of your new residential and mailing address 
+                        within 14 days of moving.</i>
+                    </p>
+                    <p><h5>Residential Address</h5></p>
+                    
+                    <input type="text" placeholder="Unit number & Street number" 
+                            style="width: 500px; padding: 0px" />
+                    <input type="text" placeholder="Suburb" style="width: 500px; padding: 0px" />
+                    <input type="text" placeholder="State & Postcode" style="width: 500px; padding: 0px" />
+                    
+                    <p>Mailing Address 
+                        <i>(If different from residential address. 
+                            All mail will be posted to this address)</i>
+                    </p>
+                    <input type="text" placeholder="Unit number & Street number" 
+                        style="width: 500px; padding: 0px" />                    
+                    <input type="text" placeholder="State & Postcode" 
+                        style="width: 500px; padding: 0px" />
+                    <div class="row">
+                        <div class="col-md-6"> Date Of Birth
+                            <p><input type="text" placeholder="e.g. Date/Month/Year"/></p>
+                        </div>
+                        <div class="col-md-6"> ABN (If applicable)
+                            <input type="text" placeholder="e.g. 1234567"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">Gender</div>
+                        <div class="col-md-3"><input type="checkbox" value ="Male" id="checkbox_Male">
+                            <label for="checkbox_Male">Male</label>
+                        </div>
+                        <div class="col-md-3"><input type="checkbox" value ="Female" id="checkbox_female">
+                            <label for="checkbox_female">Female</label>
+                        </div>
+                    </div>
+                    <i>Please provide your email address if you would like to register 
+                        for an online services account, go to <b>service.nsw.gov.au/online-services</b> 
+                        for more information
+                    </i>  
+                        <input type="text" placeholder="e.g. johnsmiths@hotmail.com" 
+                            style="width: 500px; padding: 0px" />
+                    <p><i>Please provide a mobile number if you would like to receive communications from 
+                            Service NSW this way
+                        </i>
+                        <input type="text" placeholder="e.g. 0423444555" 
+                        style="width: 500px; padding: 0px" />
+                    </p>                    
+                </div>
+                <div class="col-md-6">
+                    <h5>4. Dealer's Details</h5>                    
+                    <input type="text" placeholder="Name of dealership" style="width: 500px; padding: 0px" />
+                    <div class="row">
+                        <div class="col-md-6">Dealer's Licence number
+                            <input type="text" placeholder="" style="width: 200px; padding: 0px" />
+                        </div>
+                        <div class="col-md-6"> State or Territory
+                            <input type="text" placeholder="" style="width: 200px; padding: 0px" />
+                        </div>
+                    </div>
+                    
+                    <p>Date vehicle purchase/acquired</p> 
+                    <input type="text" placeholder="e.g. Day/Month/Year" 
+                    style="width: 200px; padding: 0px" />   
+                    <p><b>Dealers now go to 8</b></p>
+                    
+                    <h5>5. Corporation's details</h5>
+                    <p>Customer number (if issued)</p>
+                    <input type="text" placeholder="" style="width: 300px; padding: 0px" /> 
+                    
+                    <p>Name</p>
+                    <input type="text" placeholder="" style="width: 500px; padding: 0px" />
+                    <input type="text" placeholder="" style="width: 500px; padding: 0px" />
+                    
+                    <p><i>You must notify Service NSW of your new residential 
+                        and mailing address within 14 days of moving.</i>
+                    </p>
+
+                    <p>Business Address</p>
+                    <input type="text" placeholder="" style="width: 500px; padding: 0px" />
+                    <input type="text" placeholder="" style="width: 500px; padding: 0px" />
+                    
+                    <p>Mailing Address 
+                        <i>(If different from residential address. All mail will be posted to this address)</i>
+                    </p>
+                        <input type="text" placeholder="" style="width: 500px; padding: 0px" />                        
+                        <input type="text" placeholder="" style="width: 500px; padding: 0px" />
+                        
+                        <div class="row">
+                            <div class="col-md-5"> ABN (If applicable)
+                                <p><input type="text" placeholder=""/></p>
+                            </div>
+                            <div class="col-md-5"> ACN, ARBN or other
+                                <input type="text" placeholder="e.g. 1234567"/>
+                                <h6>(evidence of incorporation required - see page 4)</h6>
+                            </div>
+                        </div>
+                    
+                    <h5>6. Courtesy Name</h5>
+                    <p>(only an organisation name can be recorded, if required)</p> 
+                    <input type="text" placeholder="" style="width: 500px; padding: 0px" />  
+                    
+                    <h5>7. Fleet manager or leasing company (if applicable)</h5> 
+                    <i>To be completed only if the registration renewal or legal notices are 
+                        to be mailed to the fleet manager.</i>
+                    <h6>Name and postal address of manager</h6>
+                    (for registration renewals or legal notices)
+                    
+                    <input type="text" placeholder="Unit number & Street number" 
+                        style="width: 500px; padding: 0px" />
+                    <input type="text" placeholder="Suburb" style="width: 500px; padding: 0px" />
+                    <input type="text" placeholder="State & Postcode" style="width: 500px; padding: 0px" />
+                    
+                    <p>Customer Number</p>
+                    <input type="text" placeholder="" style="width: 300px; padding: 0px" /> 
+                    <h6>To record a courtesy name go to 6, if the vehicle is to be leased or managed go to 7, 
+                        if not go to 8
+                    </h6>
+                </div>                 
+            </div>
+            </div>
+        </form>
+    </body>
+</html>
